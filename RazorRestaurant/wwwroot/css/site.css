@@ -26,8 +26,26 @@ body {
     margin: 40px;
 }
 
+.mainSubTitle {
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize !important;
+}
+
 .btn-order {
     color: #fff;
     background-color: #c40a0a;
     border-color: #b50d0d;
+}
+.smallText{
+    text-align:right;
+    color:grey;
+}
+.makeYourOwnDiv{
+    background:grey;
+    margin:0;
+}
+.makeYourOwnText {
+    margin: 100px 0 20px 0;
+    color:white;
 }
