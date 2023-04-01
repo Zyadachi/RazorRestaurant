@@ -12,17 +12,19 @@ namespace RazorRestaurant.Pages.Forms
         public void OnGet()
         {
         }
-        public IActionResult onPost()
+        public IActionResult OnPost()
         {
             PizzaPrice = Pizza.BasePrice;
-            if (Pizza.TomatoSauce) PizzaPrice += 1;
-			if (Pizza.ExtraCheese) PizzaPrice += 1;
-			if (Pizza.Ham) PizzaPrice += 1;
-			if (Pizza.Mushrooms) PizzaPrice += 1;
-			if (Pizza.Olives) PizzaPrice += 1;
-			if (Pizza.Jalapeno) PizzaPrice += 1;
-			if (Pizza.Pepperoni) PizzaPrice += 1;
+
+            if (Pizza.TomatoSauce) PizzaPrice += 2;
+			if (Pizza.Cheese) PizzaPrice += 2;
+			if (Pizza.Ham) PizzaPrice += 3;
+			if (Pizza.Mushrooms) PizzaPrice += 2;
+			if (Pizza.Olives) PizzaPrice += 2;
+			if (Pizza.Jalapeno) PizzaPrice += 3;
+			if (Pizza.Pepperoni) PizzaPrice += 3;
 			if (Pizza.Pineapple) PizzaPrice += 1;
+
             return RedirectToPage("/Checkout/Checkout", new {Pizza.PizzaName, PizzaPrice});
 
         }

@@ -7,7 +7,7 @@
         public float BasePrice { get; set; } = 2;
         public bool TomatoSauce { get; set; }
         public bool Ham { get; set; }
-        public bool ExtraCheese { get; set; }
+        public bool Cheese { get; set; }
         public bool Mushrooms { get; set; }
         public bool Olives { get; set; }
         public bool Pepperoni { get; set; }
